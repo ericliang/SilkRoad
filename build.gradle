@@ -1,3 +1,0 @@
-dependencies {
-    compile files('lib/google-play-services.jar')
-}
