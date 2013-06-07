@@ -1,5 +1,7 @@
 package com.futureclub.silkroad;
 
+import android.content.Intent;
+import android.widget.Button;
 import com.futureclub.silkroad.util.SystemUiHider;
 
 import android.annotation.TargetApi;
@@ -111,7 +113,20 @@ public class FullscreenActivity extends Activity {
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
-        findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
+        Button dummy_button = (Button)findViewById(R.id.dummy_button);
+        dummy_button.setOnTouchListener(mDelayHideTouchListener);
+
+        dummy_button.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(FullscreenActivity.this, MainActivity.class);
+                startActivity(intent);
+//                finish();//停止当前的Activity,如果不写,则按返回键会跳转回原来的Activity
+            }
+
+        });
     }
 
     @Override
