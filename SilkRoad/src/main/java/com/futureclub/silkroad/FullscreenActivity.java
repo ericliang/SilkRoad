@@ -121,7 +121,7 @@ public class FullscreenActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(FullscreenActivity.this, LoginActivity.class);
+                intent.setClass(FullscreenActivity.this, MainActivity.class);
                 startActivity(intent);
 //                finish();//停止当前的Activity,如果不写,则按返回键会跳转回原来的Activity
             }
