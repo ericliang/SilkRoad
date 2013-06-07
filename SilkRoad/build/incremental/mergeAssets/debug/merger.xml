@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/Users/ericliang/workshop/codes_in_git/sina-im-new/newbase/hackathon24/tk9/SilkRoad/SilkRoad/src/main/assets" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/ericliang/workshop/codes_in_git/sina-im-new/newbase/hackathon24/tk9/SilkRoad/SilkRoad/src/debug/assets" />
+    </dataSet>
+
+</merger>
