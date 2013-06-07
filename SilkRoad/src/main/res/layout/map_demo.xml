@@ -4,6 +4,7 @@
               android:orientation="vertical">
 
         <!-- 这里才是重点，放置map的地方 -->
+    <!--
         <com.google.android.maps.MapView
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/map_view"
@@ -12,11 +13,11 @@
                 android:clickable="true"
                 android:enabled="true"
                 android:apiKey="AIzaSyBHezKD2BtKdB4vwHdK3APcYvj3LFjOL5I" />
-       <!--
+        -->
         <fragment xmlns:android="http://schemas.android.com/apk/res/android"
                   android:id="@+id/map"
                   android:layout_width="match_parent"
                   android:layout_height="match_parent"
                   android:name="com.google.android.gms.maps.MapFragment"/>
-         -->
+
 </LinearLayout>

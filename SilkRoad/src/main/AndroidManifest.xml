@@ -16,6 +16,7 @@
         <meta-data
                 android:name="com.google.android.maps.v2.API_KEY"
                 android:value="AIzaSyBHezKD2BtKdB4vwHdK3APcYvj3LFjOL5I"/>
+        <uses-library android:name="com.google.android.maps" android:required="true" />
         <activity
             android:name="com.futureclub.silkroad.FullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -26,7 +27,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivitiy"/>
         <activity android:name=".MapActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
